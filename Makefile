@@ -41,6 +41,9 @@ clean:
 fclean: clean
 	@rm -f ${NAME}
 
+run: ${NAME}
+	./${NAME}
+
 re: fclean all
 
 ${OBJS_DIR}/%.o: ${SRCS_DIR}/%.c
